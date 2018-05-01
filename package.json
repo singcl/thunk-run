@@ -1,0 +1,25 @@
+{
+  "name": "@singcl/thunk",
+  "version": "1.0.0",
+  "description": "comprehension of thunk funtion in javascript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "thunk",
+    "thunkify",
+    "co",
+    "TJ"
+  ],
+  "author": "singcl",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/singcl/thunk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/singcl/thunk/issues"
+  },
+  "homepage": "https://github.com/singcl/thunk#readme"
+}
