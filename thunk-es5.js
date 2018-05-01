@@ -19,3 +19,8 @@ var Thunk = function(fn) {
         }
     }
 };
+
+/**
+ * @module Thunk
+ */
+module.exports = Thunk;
