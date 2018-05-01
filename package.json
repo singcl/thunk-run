@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/singcl/thunk/issues"
   },
-  "homepage": "https://github.com/singcl/thunk#readme"
+  "homepage": "https://github.com/singcl/thunk#readme",
+  "devDependencies": {
+    "thunkify": "^2.1.2"
+  }
 }
