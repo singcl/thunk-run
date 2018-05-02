@@ -1,8 +1,8 @@
 {
   "name": "@singcl/thunk",
-  "version": "1.0.0",
-  "description": "comprehension of thunk funtion in javascript.",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "comprehension of thunk funtion in javascript & generator function auto runner",
+  "main": "run.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +10,8 @@
     "thunk",
     "thunkify",
     "co",
-    "TJ"
+    "TJ",
+    "generator auto runner"
   ],
   "author": "singcl",
   "license": "ISC",
