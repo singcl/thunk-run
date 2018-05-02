@@ -1,5 +1,5 @@
 {
-  "name": "@singcl/thunk",
+  "name": "@singcl/co",
   "version": "0.0.1",
   "description": "comprehension of thunk funtion in javascript & generator function auto runner",
   "main": "run.js",
