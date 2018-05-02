@@ -1,7 +1,7 @@
 var fs = require('fs');
 var path = require('path');
 
-var thunkify = require('../thunkify');
+var thunkify = require('../src/thunk');
 
 var reaFileThunkify = thunkify(fs.readFile);
 var filePath = path.resolve(__dirname, '../package.json');
@@ -53,7 +53,7 @@ var filePath = path.resolve(__dirname, '../package.json');
 
 // Generator Thunk自动执行器单独为一个run 模块
 (function() {
-    var run = require('../run');
+    var run = require('../src/run');
 
     function* gen() {
         var r1 = yield reaFileThunkify(filePath, 'utf8');

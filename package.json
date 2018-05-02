@@ -1,8 +1,8 @@
 {
-  "name": "@singcl/co",
-  "version": "0.0.1",
+  "name": "@singcl/thunk-run",
+  "version": "0.1.0",
   "description": "comprehension of thunk funtion in javascript & generator function auto runner",
-  "main": "run.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
