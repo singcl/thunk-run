@@ -1,5 +1,8 @@
 /**
  * 专为Generator Function 设计的Thunkify 函数
+ * Thunk 函数有什么用？回答是以前确实没什么用
+ * 但是 ES6 有了 Generator 函数，Thunk 函数现在可以用于 Generator 函数的自动流程管理。
+ * 
  * @param {Function} fn 需要thunkify 的目标函数
  * @see https://github.com/tj/node-thunkify 
  */
