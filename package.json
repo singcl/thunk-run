@@ -24,7 +24,6 @@
   },
   "homepage": "https://github.com/singcl/thunk#readme",
   "devDependencies": {
-    "eslint": "^4.19.1",
-    "thunkify": "^2.1.2"
+    "eslint": "^4.19.1"
   }
 }
