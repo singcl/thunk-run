@@ -15,9 +15,9 @@ var Thunk = function(fn) {
         var args = Array.prototype.slice.call(arguments);
         return function(callback) {
             args.push(callback);
-            return fn.apply(this, args)
-        }
-    }
+            return fn.apply(this, args);
+        };
+    };
 };
 
 /**

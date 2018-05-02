@@ -1,6 +1,8 @@
 var fs = require('fs');
 var path = require('path');
 
+/* eslint semi: ["warn", "never"] */
+
 // 正常版本的readFile（多参数版本）
 // fs.readFile(fileName, callback);
 

@@ -10,15 +10,16 @@
  * @see http://es6.ruanyifeng.com/?search=x&x=0&y=0#docs/generator-async
  * @param {Function} fn 需要Thunk的函数
  */
+/* eslint "semi": ["error","never"] */
 var Thunk = function(fn) {
     return function(...args) {
         return function(callback) {
             return fn.call(this, ...args, callback)
         }
     }
-};
+}
 
 /**
  * @module Thunk
  */
-module.exports = Thunk;
+module.exports = Thunk
