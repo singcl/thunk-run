@@ -1,5 +1,10 @@
 ## Thunkify Runner & Promisify Runner.
 
+[![npm (scoped)](https://img.shields.io/npm/v/@singcl/thunk-run.svg?style=flat-square)](https://www.npmjs.com/package/@singcl/thunk-run)
+![David](https://img.shields.io/david/dev/singcl/thunk-run.svg?style=flat-square)
+![David](https://img.shields.io/david/singcl/thunk-run.svg?style=flat-square)
+[![npm](https://img.shields.io/npm/dm/@singcl/thunk-run.svg?style=flat-square)](https://www.npmjs.com/package/@singcl/thunk-run)
+
 ### Usage
 
 #### `await` along with Thunkify function.
