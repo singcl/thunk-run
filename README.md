@@ -1,4 +1,4 @@
-## Thunk
+## Thunkify Runner & Promisify Runner.
 
 ### Usage
 
