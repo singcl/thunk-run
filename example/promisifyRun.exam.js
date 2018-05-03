@@ -7,7 +7,7 @@ var promisifyRun = require('../index').promisifyRun;
 var reaFilePromisify = promisify(fs.readFile);
 var filePath = path.resolve(__dirname, '../example/test.txt');
 
-// Generator Thunk自动执行器单独为一个 promisifyRun 模块
+// Generator Promise 自动执行器单独为一个 promisifyRun 模块
 
 function* gen() {
     try {
