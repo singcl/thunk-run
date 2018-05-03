@@ -1,13 +1,13 @@
 var fs = require('fs');
 var path = require('path');
 
-var thunkify = require('../index').thunk;
-var run = require('../index').run;
+var thunkify = require('../index').thunkify;
+var thunkifyRun = require('../index').thunkifyRun;
 
 var reaFileThunkify = thunkify(fs.readFile);
 var filePath = path.resolve(__dirname, '../package.json');
 
-// Generator Thunk自动执行器单独为一个run 模块
+// Generator Thunk自动执行器单独为一个thunkifyRun 模块
 
 function* gen() {
     try {
@@ -20,4 +20,4 @@ function* gen() {
     }
 }
 
-run(gen);
+thunkifyRun(gen);
