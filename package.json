@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/singcl/thunk-run#readme",
   "devDependencies": {
-    "eslint": "^4.19.1"
+    "eslint": "^4.19.1",
+    "tslint": "^5.10.0"
   }
 }
