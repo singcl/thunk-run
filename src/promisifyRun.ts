@@ -1,5 +1,5 @@
 
-function run(gen: () => IterableIterator<Promise<any>>): void {
+function run(gen: (...args: any[]) => IterableIterator<Promise<any>>): void {
     const g = gen();
     let result = g.next();
 
@@ -13,8 +13,13 @@ function run(gen: () => IterableIterator<Promise<any>>): void {
             next();
         }).catch(function(e: any) {
             try {
-                // 怎么做？
-                result = g.throw(e);
+                // 解决throw方法是一个可选方法引起的编译错误： https://github.com/Microsoft/TypeScript/issues/10642
+                const methodThrow = g.throw;
+                if (methodThrow) {                  // <-- methodThrow is of type IteratorResult<T>|undefined
+                    result = methodThrow(e);        // <-- methodThrow is of type IteratorResult<T>
+                } else {
+                    throw e;
+                }
                 next();
             } catch (error) {
                 console.log("Generator外捕获错误：", error);
