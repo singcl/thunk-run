@@ -27,7 +27,7 @@
     "eslint": "^4.19.1"
   },
   "dependencies": {
-    "@types/node": "^6.0.110",
+    "@types/node": "^8.10.14",
     "tslint": "^5.10.0",
     "typescript": "^2.8.3"
   }
