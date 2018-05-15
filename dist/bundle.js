@@ -7,7 +7,7 @@
 		var a = factory();
 		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
 	}
-})(window, function() {
+})(this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -137,7 +137,7 @@ eval("\r\n/// <reference path=\"../typings/index.d.ts\" />\r\n/**\r\n * 专为Ge
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\n/// <reference path=\"../typings/index.d.ts\" />\r\nfunction run(gen) {\r\n    const g = gen();\r\n    function next(err, data) {\r\n        try {\r\n            // 解决throw方法是一个可选方法引起的编译错误： https://github.com/Microsoft/TypeScript/issues/10642\r\n            const methodThrow = g.throw;\r\n            if (methodThrow) {\r\n                const result = err ? methodThrow(err) : g.next(data);\r\n                console.log(result);\r\n                if (result.done) {\r\n                    return;\r\n                }\r\n                result.value(next);\r\n            }\r\n        }\r\n        catch (error) {\r\n            console.log(\"Generator外捕获错误：\", error);\r\n        }\r\n    }\r\n    next();\r\n}\r\nmodule.exports = run;\r\n\n\n//# sourceURL=webpack:///./src/thunkifyRun.js?");
+eval("\r\n/// <reference path=\"../typings/index.d.ts\" />\r\nfunction run(gen) {\r\n    const g = gen();\r\n    function next(err, data) {\r\n        try {\r\n            // 解决throw方法是一个可选方法引起的编译错误： https://github.com/Microsoft/TypeScript/issues/10642\r\n            const methodThrow = g.throw;\r\n            if (methodThrow) {\r\n                const result = err ? methodThrow.call(g, err) : g.next(data);\r\n                console.log(result);\r\n                if (result.done) {\r\n                    return;\r\n                }\r\n                result.value(next);\r\n            }\r\n        }\r\n        catch (error) {\r\n            console.log(\"Generator外捕获错误：\", error);\r\n        }\r\n    }\r\n    next();\r\n}\r\nmodule.exports = run;\r\n\n\n//# sourceURL=webpack:///./src/thunkifyRun.js?");
 
 /***/ })
 

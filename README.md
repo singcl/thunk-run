@@ -61,3 +61,6 @@ function* gen() {
 
 promisifyRun(gen);
 ```
+
+### UMD
+在dist目录下已经构建好了`UMD`包可以直接使用。

@@ -1,12 +1,11 @@
 {
   "name": "@singcl/thunk-run",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "comprehension of thunk funtion in javascript & generator function auto runner",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tsc && webpack ./index.js -o dist/bundle.js --mode development --output-library-target umd",
-    "bundle": "tsc && webpack ./index.js -o dist/bundle.min.js --mode production --output-library-target umd",
+    "bundle": "tsc && webpack --config webpack.config.js",
     "release": "npm run -s bundle && git add --all && git commit -am %npm_package_version% && git tag %npm_package_version% && git push && git push --tags && npm publish"
   },
   "keywords": [
