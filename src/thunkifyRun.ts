@@ -1,5 +1,4 @@
-type callback = (err: any, ...args: any[]) => void;
-type Thunk = (done: callback) => void;
+/// <reference path="../typings/index.d.ts" />
 
 function run(gen: (...args: any[]) => IterableIterator<Thunk>) {
     const g = gen();

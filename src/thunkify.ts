@@ -1,5 +1,4 @@
-type callback = (err: any, ...args: any[]) => void;
-type SrcFunc = (...args: any[]) => void;
+/// <reference path="../typings/index.d.ts" />
 
 /**
  * 专为Generator Function 设计的thunk 函数
