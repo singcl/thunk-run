@@ -1,8 +1,9 @@
 import fs = require("fs");
 import path = require("path");
 
-import promisify = require("../src/promisify");
-import promisifyRun = require("../src/promisifyRun");
+import bo = require("../index");
+const promisify = bo.promisify;
+const promisifyRun = bo.promisifyRun;
 
 // 这里也可以不写类型，类型推论会自动判断类型
 const reaFilePromisify: (...args: any[]) => Promise<any> = promisify(fs.readFile);
