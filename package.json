@@ -1,6 +1,6 @@
 {
   "name": "@singcl/thunk-run",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "comprehension of thunk funtion in javascript & generator function auto runner",
   "main": "dist/bundle.min.js",
   "scripts": {
