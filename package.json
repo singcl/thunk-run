@@ -1,10 +1,14 @@
 {
   "name": "@singcl/thunk-run",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "comprehension of thunk funtion in javascript & generator function auto runner",
-  "main": "index.js",
+  "source": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.m.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle": "tsc && microbundle",
+    "release": "npm run -s bundle && git add --all && git commit -am %npm_package_version% && git tag %npm_package_version% && git push && git push --tags && npm publish"
   },
   "keywords": [
     "thunk",
@@ -24,7 +28,8 @@
   },
   "homepage": "https://github.com/singcl/thunk-run#readme",
   "devDependencies": {
-    "eslint": "^4.19.1"
+    "eslint": "^4.19.1",
+    "microbundle": "^0.4.4"
   },
   "dependencies": {
     "@types/node": "^8.10.14",
